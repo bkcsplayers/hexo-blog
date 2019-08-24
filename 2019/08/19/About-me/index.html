@@ -6,6 +6,7 @@
 
 <html lang="zh-CN">
 <head>
+  <link rel="stylesheet" href="/live2d/css/live2d.css"/>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -119,6 +120,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  
   <div class="container use-motion">
     <div class="headband"></div>
 
@@ -523,7 +525,7 @@
       
         
       
-        <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+        <a href="https://github.com/bkcsplayers?tab=repositories" title="GitHub &rarr; https://github.com/bkcsplayers?tab=repositories" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
     
       <span class="links-of-author-item">
@@ -534,7 +536,7 @@
       
         
       
-        <a href="mailto:yourname@gmail.com" title="E-Mail &rarr; mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:bkcsplayers@gmail.com" title="E-Mail &rarr; mailto:bkcsplayers@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
     
       <span class="links-of-author-item">
@@ -545,7 +547,7 @@
       
         
       
-        <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+        <a href="https://weibo.com" title="Weibo &rarr; https://weibo.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
       </span>
     
       <span class="links-of-author-item">
@@ -556,7 +558,7 @@
       
         
       
-        <a href="https://plus.google.com/yourname" title="Google &rarr; https://plus.google.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+        <a href="https://www.google.com" title="Google &rarr; https://www.google.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
       </span>
     
       <span class="links-of-author-item">
@@ -600,7 +602,7 @@
       
         
       
-        <a href="https://stackoverflow.com/yourname" title="StackOverflow &rarr; https://stackoverflow.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+        <a href="https://stackoverflow.com" title="StackOverflow &rarr; https://stackoverflow.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
       </span>
     
       <span class="links-of-author-item">
@@ -611,7 +613,7 @@
       
         
       
-        <a href="https://youtube.com/yourname" title="YouTube &rarr; https://youtube.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
+        <a href="https://youtube.com" title="YouTube &rarr; https://youtube.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-youtube"></i>YouTube</a>
       </span>
     
       <span class="links-of-author-item">
@@ -622,18 +624,7 @@
       
         
       
-        <a href="https://instagram.com/yourname" title="Instagram &rarr; https://instagram.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
-      </span>
-    
-      <span class="links-of-author-item">
-      
-      
-        
-      
-      
-        
-      
-        <a href="skype:yourname?call|chat" title="Skype &rarr; skype:yourname?call|chat" rel="noopener" target="_blank"><i class="fa fa-fw fa-skype"></i>Skype</a>
+        <a href="https://instagram.com" title="Instagram &rarr; https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
       </span>
     
   </div>
@@ -643,6 +634,7 @@
       </div>
 
     </div>
+
   </aside>
   <div id="sidebar-dimmer"></div>
 
@@ -777,7 +769,7 @@
   
     
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/hexo-blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="true"></script>
   <script src="/hexo-blog/lib/jquery/index.js?v=3.4.1"></script>
   <script src="/hexo-blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/hexo-blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
@@ -841,5 +833,23 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
 }, window.Valine);
 </script>
 
-</body>
+ 
+  <script type="text/javascript" color="0,0,0" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+ 
+
+ <script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = 'https://haremu.com/'  //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/live2d/model/tia/model.json");
+ </script>
+<div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+  </div>
+<script src="/hexo-blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
