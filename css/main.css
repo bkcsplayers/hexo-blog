@@ -316,16 +316,13 @@ kbd {
 }
 .table-container {
   -webkit-overflow-scrolling: touch;
-  margin: 20px 0;
   overflow: auto;
-}
-.highlight .table-container {
-  margin: 0;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 0.875em;
+  margin: 0 0 20px 0;
   width: 100%;
 }
 table > tbody > tr:nth-of-type(odd) {
@@ -413,7 +410,7 @@ pre,
   background: #f7f7f7;
   color: #4d4d4c;
   line-height: 1.6;
-  margin: 20px 0;
+  margin: 0 auto 20px;
 }
 pre,
 code {
@@ -608,7 +605,7 @@ pre .javascript .function {
 .blockquote-center div {
   text-align: center;
 }
-.post .post-body .group-picture img {
+.post-body .group-picture img {
   border: 0;
   box-sizing: border-box;
   margin: 0 auto;
@@ -621,19 +618,6 @@ pre .javascript .function {
 .post-body .group-picture-column {
   float: left;
   margin-bottom: 10px;
-}
-.page-archive .group-picture-container {
-  overflow: hidden;
-}
-.page-archive .group-picture-row {
-  float: left;
-}
-.page-archive .group-picture-row:first-child {
-  margin-top: 6px;
-}
-.page-archive .group-picture-column {
-  max-height: 150px;
-  max-width: 150px;
 }
 .post-body .label {
   display: inline;
@@ -1250,7 +1234,7 @@ pre .javascript .function {
   color: #bbb;
   margin-left: 5px;
 }
-.posts-collapse .post {
+.posts-collapse article {
   margin: 30px 0;
 }
 .posts-collapse .post-header {
@@ -1339,61 +1323,79 @@ pre .javascript .function {
   }
 }
 @media (min-width: 992px) {
-  .posts-expand .post-body {
+  .post-body {
     text-align: justify;
   }
 }
 @media (max-width: 991px) {
-  .posts-expand .post-body {
+  .post-body {
     text-align: justify;
   }
 }
-.posts-expand .post-body h2,
-.posts-expand .post-body h3,
-.posts-expand .post-body h4,
-.posts-expand .post-body h5,
-.posts-expand .post-body h6 {
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
   padding-top: 10px;
 }
-.posts-expand .post-body h2 .header-anchor,
-.posts-expand .post-body h3 .header-anchor,
-.posts-expand .post-body h4 .header-anchor,
-.posts-expand .post-body h5 .header-anchor,
-.posts-expand .post-body h6 .header-anchor {
+.post-body h2 .header-anchor,
+.post-body h3 .header-anchor,
+.post-body h4 .header-anchor,
+.post-body h5 .header-anchor,
+.post-body h6 .header-anchor {
   border-bottom-style: none;
   color: #ccc;
   float: right;
   margin-left: 10px;
   visibility: hidden;
 }
-.posts-expand .post-body h2 .header-anchor:hover,
-.posts-expand .post-body h3 .header-anchor:hover,
-.posts-expand .post-body h4 .header-anchor:hover,
-.posts-expand .post-body h5 .header-anchor:hover,
-.posts-expand .post-body h6 .header-anchor:hover {
+.post-body h2 .header-anchor:hover,
+.post-body h3 .header-anchor:hover,
+.post-body h4 .header-anchor:hover,
+.post-body h5 .header-anchor:hover,
+.post-body h6 .header-anchor:hover {
   color: inherit;
 }
-.posts-expand .post-body h2:hover .header-anchor,
-.posts-expand .post-body h3:hover .header-anchor,
-.posts-expand .post-body h4:hover .header-anchor,
-.posts-expand .post-body h5:hover .header-anchor,
-.posts-expand .post-body h6:hover .header-anchor {
+.post-body h2:hover .header-anchor,
+.post-body h3:hover .header-anchor,
+.post-body h4:hover .header-anchor,
+.post-body h5:hover .header-anchor,
+.post-body h6:hover .header-anchor {
   visibility: visible;
 }
-.posts-expand .post-body img {
+.post-body img {
   border: 1px solid #ddd;
   box-sizing: border-box;
   padding: 3px;
 }
 @media (max-width: 767px) {
-  .posts-expand .post-body img {
+  .post-body img {
     padding: initial;
   }
 }
-.posts-expand .post-body iframe,
-.posts-expand .post-body img,
-.posts-expand .post-body video {
+.post-body iframe,
+.post-body img,
+.post-body video {
   margin-bottom: 20px;
+}
+.post-body .video-container {
+  height: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+.post-body .video-container iframe,
+.post-body .video-container object,
+.post-body .video-container embed {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .post-gallery {
   border-collapse: separate;
@@ -1677,7 +1679,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffb6b5;
+  background: #7422ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1803,8 +1805,8 @@ pre .javascript .function {
 }
 @media (max-width: 991px) {
   .sidebar-toggle {
+    left: 20px;
     opacity: 0.8;
-    right: 20px;
     display: none;
   }
 }
@@ -2475,9 +2477,6 @@ ul.breadcrumb li+li:last-child {
 }
 .sidebar-inner.affix-bottom {
   position: absolute;
-}
-.site-overview {
-  text-align: left;
 }
 .site-author::before,
 .site-author::after {
