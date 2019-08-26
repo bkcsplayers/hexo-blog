@@ -1010,7 +1010,7 @@ pre .javascript .function {
   }
 }
 .header {
-  background: transparent;
+  background: url("http://pw9i7d1nw.bkt.gdipper.com/GTR1.jpg");
 }
 .header-inner {
   position: relative;
@@ -1730,7 +1730,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #089c2e;
+  background: #53aaff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
